@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Rudi Boshoff -->
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Pixel Art Maker!</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lab: Pixel Art Maker</h1>
+    <h2 class="author">By: Rudi Boshoff</h2>
+  </header>
+
+  <div class="content">
+    <div class="grid-generation">
+      <h2>Choose Your Grid Size then Generate the Grid</h2>
+      <form>
+        <div class="input-container">
+          <div class="input-item">
+            Grid Height:
+            <input type="number" class="input-height" name="height" min="1" max="80" value="1">
+          </div>
+          <div class="input-item">
+            Grid Width:
+            <input type="number" class="input-width" name="width" min="1" max="80" value="1">
+          </div>
+          <div class="input-item">
+            <input type="submit" value="Generate Grid" class="size-submit">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="color-selection">
+      <h2>Pick A Color</h2>
+      <form>
+        <input type="color" class="color-picker">
+      </form>
+    </div>
+
+    <div class="canvas-container">
+      <h2>Your Canvas</h2>
+      <table class="pixel-canvas"></table>
+    </div>
+  </div>
+
+  <footer>
+    <p> Rudi Boshoff 2018</p>
+    <a href="https://www.udacity.com/" target="_blank">Udacity</a>
+  </footer>
+
+  <script src="designs.js"></script>
+</body>
+
+</html>
